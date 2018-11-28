@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Employee Details</string>
+    <string name="hint_employee_name">Name</string>
+    <string name="employee_overview_title">Overview</string>
+    <string name="hint_employee_address">Address</string>
+    <string name="hint_employee_number">number</string>
+    <string name="employee_photo_path_title">Photo</string>
+    <string name="employee_birth_date">Birth Date</string>
+    <string name="employee_birth_date_format">March 26,2018</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_search">Search</string>
+    <string name="details_label">Empolyees</string>
+    <string name="edit_label">Edit Details</string>
+    <string name="employee_photo_path_format">ID_Name.jpg</string>
+    <string name="editor_insert_employee_failed">failed insert employee date</string>
+    <string name="editor_insert_employee_successful">Saved !</string>
+    <string name="editor_update_employee_failed">failed update employee data</string>
+    <string name="editor_update_employee_successful">Seccessful Updated !</string>
+    <string name="delete_dialog_msg">Delete this employee?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_delete_pet_failed">Error with deleting employee</string>
+    <string name="editor_delete_pet_successful">Empolyee deleted</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="editor_activity_title_new_employee">Add Employee</string>
+    <string name="editor_activity_title_edit_employee">Edit Employee</string>
+    <string name="empty_view_title_text">There\'s NO Employee yet ...</string>
+    <string name="empty_view_subtitle_text">Get Start By Adding Employee</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_picker">date picker</string>
+</resources>

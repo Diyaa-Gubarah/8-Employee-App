@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <!-- Overview category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/employee_overview_title" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/edit_employee_name"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_employee_name"
+                    android:inputType="textCapWords" />
+
+                <!-- Breed field -->
+                <EditText
+                    android:id="@+id/edit_employee_address"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_employee_address"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/edit_employee_number"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_employee_number"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:onClick="showDatePicker">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/employee_birth_date" />
+
+            <!-- Label -->
+            <TextView
+                android:id="@+id/text_employee_birth_day"
+                style="@style/BirthDateStyle"
+                android:text="@string/employee_birth_date_format"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/employee_photo_path_title" />
+
+            <TextView
+                android:id="@+id/text_employee_photo_path"
+                style="@style/BirthDateStyle"
+                android:text="@string/employee_photo_path_format" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:onClick="openCamera"
+        android:src="@drawable/ic_photo_camera"
+        app:fabSize="normal" />
+</RelativeLayout>
